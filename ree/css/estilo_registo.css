@@ -1,0 +1,141 @@
+
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Titan+One);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
+
+body {
+	background: #f3f0d7;
+    text-align: center;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+}
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+input {
+	font-size: 1em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+	-webkit-appearance: none;
+}
+.conjunto{
+    width: 500px;
+    height: 470px;
+    margin-top: 35px;
+    background: white;
+    border-radius: 20px;
+    display:block;
+    padding: 1px;
+    margin-left: auto;
+    margin-right: auto;
+	
+}
+
+p{
+    text-align: center;
+    padding: 5px 7px;
+    color: tomato;
+    font-weight: bold;
+	line-height: 30px;
+	text-align: center;
+}
+
+.Registro {
+    margin-top: 70px;
+	display:block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 242px;
+    
+
+}
+
+.Registro span {
+	color: hsl(5, 50%, 57%);
+	display: block;
+	height: 48px;
+	line-height: 70px;
+	position: absolute;
+	width: 40px;
+}
+
+.Registro input {
+    width: 100px;
+	height: 48px;
+	border: none;
+    margin-top: 10px;
+	outline: none;
+}
+
+.Registro input[type="text"] {
+	background-color: #e6e6e6;
+    border-radius: 20px;
+	color: #363636;
+	padding-left: 36px;
+	width: 204px;
+    
+}
+
+.Registro input[type="password"] {
+	background-color: #e6e6e6;
+	border-radius: 20px;
+	color: #363636;
+	margin-bottom: 20px;
+	padding-left: 36px;
+	width: 204px;
+}
+
+
+.iniciar_sesion{
+    width: 200px;
+    height: 30px;
+    color: white;
+    background-color: #ff5865;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 10px 7px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+	line-height: 30px;
+	text-align: center;
+
+}
+
+.register {
+    width: 200px;
+    height: 30px;
+    color: white;
+    background-color: #d47e2e;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 10px 7px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+	line-height: 30px;
+	text-align: center;
+	
+}
+/* animacion */
+
+.register:hover {
+	background-color: #2cc1c6;
+  box-shadow: 2px 2px 20px  #2c90c6, #fff 0 -1px 2px;
+}
+
+.iniciar_sesion:hover {
+	background-color: #f040c4;
+  box-shadow: 2px 2px 20px  #b26ec7, #fff 0 -1px 2px;
+}

@@ -1,0 +1,413 @@
+:root{
+    --background: linear-gradient(135deg, #FFFFFF 0%, #e07c41ef 100%);
+    --color-primary:#FFFFFF;
+    --color-secondary: #cfce6cef ;
+    --boton-padding: 20px 40px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background: #FFFFFF;
+    margin: 0;
+}
+
+.contenedor{
+   background: #F7F7F7;
+    
+    
+}
+
+.nav-main{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px;
+}
+.nav-log{
+    width: 50px;
+    height: 50px;
+
+}
+
+.logo{
+    background: #FFFFFF; 
+    box-shadow: 0 8px 10px rgba(66, 66, 66, .5);
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+   
+   
+}
+
+.cont{
+    background: #FFFFFF;
+    box-shadow: 0 8px 10px rgba(66, 66, 66, .5);
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    
+}
+.contt a i{
+    background: #FFFFFF;
+    box-shadow: 0 8px 10px rgba(66, 66, 66, .5);
+    padding: 15px;
+    border-radius: 50%;
+    
+}
+
+.contt i{
+   
+    color: #cfce68;
+}
+.nav-main ul{
+    display: flex;
+}
+
+.nav-main ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+ ul li {
+     list-style: none;
+ }
+a{
+text-decoration: none;
+color: #524b4b;
+}
+
+.nav-main ul.nav-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* contenedor de imagen */
+
+
+.hero{
+    height: 100vh;
+    background-image: url(/assets/restauran.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+   
+}
+
+
+
+.container{
+  
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+    max-width: 1200px;
+    
+}
+
+
+.hero .container{
+    padding: 10px;
+    margin-left: 125px;
+    justify-items: center;
+    align-items: center;
+
+}
+
+
+.hero__container{
+    display: flex;
+    height: calc(100vh - 70px);
+    align-items: center;
+    color: #fff;
+}
+
+.hero__texts{
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.hero__title{
+    font-size: 3.2rem;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.hero__subtitle{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.hero__cta{
+    display: inline-block;
+    background: var(--color-secondary);
+    padding: var(--boton-padding);
+    color: var(--color-primary);
+    text-decoration: none;
+    margin-top: 25px;
+    border-radius: 40px;
+    margin-left: 33%;
+    box-shadow: 0 8px 10px rgba(66, 66, 66, .5);
+}
+
+.hero__wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:100px;
+}
+
+/* Menú */
+
+
+.carusel{
+width: 100%;
+padding: 50px;
+height: 350px;
+align-items: center;
+}
+
+.slider{
+    width: 60%;
+   border-radius: 50px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate;
+  
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-radius: 50px;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    25% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+
+main{
+    height: 100%;
+    height: auto;
+    background: #F3F0D7;
+    position: relative;
+}
+
+
+.subtitle{
+    color: var(--color-secondary);
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+    
+}
+
+.menu__grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.menu__item{
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+    background: var(--color-secondary);
+    box-shadow: 0 8px 10px rgba(66, 66, 66, .5);
+    border-radius: 7px;
+    padding: 30px 25px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+
+.menu__me{
+    display: flex;
+    align-items: center;
+ 
+}
+
+.menu__img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 0 8px 10px rgba(66, 66, 66, .5);
+    border-radius: 20px;
+    margin-right: 30px;
+}
+
+
+.menu__name{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.menu__review{
+    font-weight: 300;
+
+}
+
+
+.botonre{
+    width: 90%;
+    display: inline-block;
+    background: #b1af5c;
+    color: white;
+    padding: var(--boton-padding);
+    box-shadow: 0 8px 10px rgba(66, 66, 66, .5);
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 10px;
+    border-radius: 40px;
+   text-align: center;
+    
+}
+
+
+.nav-main-menu{
+
+    margin-top: 25px;
+    margin-left: 30px;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px;
+}
+
+.nav-main-menu ul{
+    display: flex;
+}
+
+.nav-main-menu ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+ 
+
+.nav-main-menu ul.nav-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+
+
+
+.number_heart {
+    text-align: center;
+    
+}
+
+.precio{
+    text-align: center;
+    font-weight: bold;
+}
+
+.number_compra{
+    text-align: center;
+}
+
+.fa-heart{
+    color: rgb(223, 13, 13);
+}
+
+
+/* Footer */
+
+.footer{
+    background: #c2c367;
+    padding: 20px;
+    
+}
+
+.footer__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.nav__items{
+    color: #FFFFFF;
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+    margin-top: auto;
+    font-size: 20px;
+   
+}
+
+.footer__title{
+    font-weight: 400;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    
+
+}
+
+.footer__icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer__container-icon{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius:50%;
+}
+.footer__icon{
+    color: inherit;
+    font-size: 30px;
+    text-decoration: none;
+    line-height: 60px;
+}
+
+.fab.footer__icon{
+    line-height: 60px;
+}
